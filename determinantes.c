@@ -6,7 +6,7 @@
 //determinante de 2x2
 int determinante2(int matriz[2][2])
 {
-	//declaração de variaveis
+	//declaraÃ§Ã£o de variaveis
 	int det;
 	det = (matriz[0][0] * matriz[1][1]) - (matriz[0][1] * matriz[1][0]);
 	return det;
@@ -15,20 +15,20 @@ int determinante2(int matriz[2][2])
 //determinante de 3x3
 int determinante3(int matriz[3][3])
 {
-	//declaração de variaveis
+	//declaraÃ§Ã£o de variaveis
 	int det;
 	det = (matriz[0][0] * matriz[1][1] * matriz[2][2]) + (matriz[0][1] * matriz[1][2] * matriz[2][0]) + (matriz[0][2] * matriz[1][0] * matriz[2][1]) - ((matriz[0][1] * matriz[1][0] * matriz[2][2]) + (matriz[0][0] * matriz[1][2] * matriz[2][1]) + (matriz[0][2] * matriz[1][1] * matriz[2][0]));
 	return det;
 }
 
-//função para matriz 2x2
+//funÃ§Ã£o para matriz 2x2
 void matriz2()
 {
-	//declaração de variáveis
+	//declaraÃ§Ã£o de variÃ¡veis
 	int i, j;	//para o for
 	int matriz[2][2], det;	//para a matriz
 	
-	//obtenção dos termos da matriz
+	//obtenÃ§Ã£o dos termos da matriz
 	printf("Digite os valores da matriz:\n");
 	for(i = 0; i < 2; i++)
 	{
@@ -55,17 +55,17 @@ void matriz2()
 	det = determinante2(matriz);
 	
 	//exibindo o determinante
-	printf("O determinante da matriz digitada é: %d\n", det);
+	printf("O determinante da matriz digitada Ã©: %d\n", det);
 }
 
-//função para matriz 3x3
+//funÃ§Ã£o para matriz 3x3
 void matriz3()
 {
-	//declaração de variáveis
+	//declaraÃ§Ã£o de variÃ¡veis
 	int i, j;	//para o for
 	int matriz[3][3], det;	//para a matriz
 	
-	//obtenção dos termos da matriz
+	//obtenÃ§Ã£o dos termos da matriz
 	printf("Digite os valores da matriz:\n");
 	for(i = 0; i < 3; i++)
 	{
@@ -92,21 +92,21 @@ void matriz3()
 	det = determinante3(matriz);
 	
 	//exibindo o determinante
-	printf("O determinante da matriz digitada é: %d\n", det);
+	printf("O determinante da matriz digitada Ã©: %d\n", det);
 }
 
 int main()
 {
-	//declaração de variaveis
+	//declaraÃ§Ã£o de variaveis
 	char opcao;
 	
-	//alterando padrão do console para português
+	//alterando padrÃ£o do console para portuguÃªs
 	setlocale(LC_ALL, "Portuguese");
 	
-	//manter opções na tela
+	//manter opÃ§Ãµes na tela
 	while(opcao != 'E')
 	{
-		//Leitura da opção
+		//Leitura da opÃ§Ã£o
 		system("CLS");
 		printf("O que deseja fazer?\n");
 		printf("[2] Determinante de matriz 2x2\n");
@@ -114,7 +114,7 @@ int main()
 		printf("[E] Fechar o programa\n");
 		opcao = toupper(getch());
 		
-		//Executando opção escolhida
+		//Executando opÃ§Ã£o escolhida
 		switch(opcao)
 		{
 			case '2':
@@ -129,7 +129,7 @@ int main()
 				printf("Fechando o programa...\n");
 				break;
 			default:
-				printf("Por favor, digite uma opção válida\n\a");
+				printf("Por favor, digite uma opÃ§Ã£o vÃ¡lida\n\a");
 				break;
 		}
 		system("PAUSE");
